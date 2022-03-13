@@ -2,18 +2,9 @@ header {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-}
-
-header .banner {
-    width: 100%;
-    height: 100vh;
     background-image: url('../assets/images/banner.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 header .navbar {
@@ -21,29 +12,60 @@ header .navbar {
     position: fixed;
     max-width: 100%;
     width: 100%;
-
+    z-index: 999999;
 }
 
 header .navbar .navbar-toggler {
     border: none;
 }
 
-header .navbar .navbar-toggler span{
-    font-size: 40px;
-}
-
-
 header .navbar .navbar-toggler:focus{
     outline: none;
 }
-
 
 header .navbar-brand img{
     max-width: 210px;
 }
 
+header .wrapper-menu {
+   display: flex;
+   align-items: center;
+}
+
+header .wrapper-menu .social-medias{
+    font-size: 20px;
+    margin-right: 64px;
+}
+
+header .wrapper-menu .social-medias a{
+    margin: 0 8px;
+    transition: 0.2s;
+    text-decoration: none;
+    color: rgba(255,255,255,0.7);
+}
+
+header .wrapper-menu .social-medias i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+header .wrapper-menu .social-medias-small{
+    display: none;
+}
+
+header .wrapper-sidebar {
+    display: flex;
+    align-items: center;
+}
+
 header .wrapper-sidebar:hover .sidebar-nav  {
     width: 340px; 
+}
+
+header .wrapper-sidebar span{
+    font-size: 40px;
+    color: rgba(255,255,255,0.7);
 }
 
 header .wrapper-sidebar .sidebar-nav {
@@ -86,15 +108,89 @@ header .wrapper-sidebar .sidebar-nav .closebtn {
     margin-left: 50px;
 }
   
-  
 header #main {
     transition: margin-left .5s;
     padding: 20px;
 }
-  
   
 @media screen and (max-height: 450px) {
     header .wrapper-sidebar .sidebar-nav {padding-top: 15px;}
     header .wrapper-sidebar .sidebar-nav a {font-size: 18px;}
 }
 
+header .banner {
+    padding: 8px 28px;
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    z-index: 99999;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 4px;
+    text-align: center;
+}
+
+header .banner p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+header .banner iframe {
+    width: 854px;
+    height: 480px;
+}
+
+@media screen and (max-width: 900px) {
+    header .banner iframe {
+        width: 640px;
+        height: 360px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    header .banner h1  {
+        font-size: 32px;
+    }
+
+    header .banner iframe {
+        width: 426px;
+        height: 240px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+    header .banner h1  {
+        font-size: 32px;
+    }
+
+    header .banner iframe {
+        width: 300px;
+        height: 170px;
+    }
+
+    header .wrapper-menu .social-medias{
+        display: none;
+    }
+
+    header .wrapper-menu .social-medias-small{
+        display: flex;
+    }
+}
+
+header .banner-overlay {
+    background-color: rgba(0, 0, 0, 0.377);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
