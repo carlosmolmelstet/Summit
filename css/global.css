@@ -2,8 +2,9 @@ body {
     max-width: 100%;
 }
 
-body {
-    height: 1000vh;
+.section {
+    height: 100vh;
+    padding-top: 100px;
 }
 
 * {

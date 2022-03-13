@@ -22,11 +22,12 @@
     <link rel="stylesheet" href="./css/global.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/header.css" crossorigin="anonymous">
 
+
     <title>Hello, world!</title>
 </head>
 
 <body>
-    <header>
+    <header class="section">
         <div class="banner-overlay"></div>
         <nav class="navbar navbar-expand-xxl navbar-dark ">
             <a class="navbar-brand" href="#">
@@ -74,6 +75,10 @@
                 allowfullscreen></iframe>
         </div>
     </header>
+    <div class="section">1111111111</div>
+    <div class="section">222222222</div>
+    <div class="section">333333333</div>
+    <div class="section">444444444</div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -86,7 +91,15 @@
         crossorigin="anonymous"></script>
 
     <!-- Summit JavaScript -->
-    <script src="./js/header.js" crossorigin="anonymous"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+          $.scrollify({
+            section : ".section",
+          });
+        });
+      </script>
+      </body>
 
 </html>
