@@ -90,16 +90,15 @@ header .wrapper-sidebar .sidebar-nav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #BCBEC0;
+    color: #f1f1f1;
     display: block;
     transition: 0.3s;
+    cursor: pointer;
 }
-  
   
 header .wrapper-sidebar .sidebar-nav a:hover {
-    color: #f1f1f1;
+    color: #d1d1d1;
 }
-  
   
 header .wrapper-sidebar .sidebar-nav .closebtn {
     position: absolute;
@@ -175,7 +174,6 @@ header .banner iframe {
         height: 240px;
     }
 }
-
 
 @media screen and (max-width: 500px) {
 
