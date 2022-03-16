@@ -1,11 +1,13 @@
-#experience-session {
-    background-image: url('../assets/images/bg-7.jpg');
+#experience-section {
+    background-image: url('../assets/images/bg-4.png');
     background-position: left top;
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #58585A;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     max-width: 100vw;
+    min-height: 100vh;
 }
 
 

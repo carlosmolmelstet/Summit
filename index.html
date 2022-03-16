@@ -6,12 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- External CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.8/css/tooltipster.bundle.css"
+        integrity="sha512-3zyscitq6+9V1nGiptsXHLVaJaAMCUQeDW34fygk9LdcM+yjYIG19gViDKuDGCbRGXmI/wiY9XjdIHdU55G97g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Google Fonts-->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,24 +24,24 @@
     <link
         href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.8/css/tooltipster.bundle.css"
-        integrity="sha512-3zyscitq6+9V1nGiptsXHLVaJaAMCUQeDW34fygk9LdcM+yjYIG19gViDKuDGCbRGXmI/wiY9XjdIHdU55G97g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Summit CSS -->
     <link rel="stylesheet" href="./css/tooltipster.main.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/global.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/header.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/leadership-session.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/experience-session.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/speakers-session.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/shouldParticipate-session.css" crossorigin="anonymous">
-    <title>Hello, world!</title>
-</head>
+    <link rel="stylesheet" href="./css/leadership-section.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/experience-section.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/speakers-section.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/shouldParticipate-section.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/contact-section.css" crossorigin="anonymous">
 
+    <title>Summit</title>
+</head>
 <body>
     <header class="section">
         <div class="banner-overlay"></div>
-        <nav class="navbar navbar-expand-xxl navbar-dark ">
+        <nav class="navbar navbar-expand-xxl navbar-dark " id="navbar">
             <a class="navbar-brand" href="#">
                 <img src="./assets/images/logo-summit.png" alt="Summit">
             </a>
@@ -58,10 +61,11 @@
                     <span class="material-icons">menu</span>
                     <div class="sidebar-nav">
                         <a href="#">HOME</a>
-                        <a href="#leadership-session">LIDERANÇA</a>
-                        <a href="#experience-session">EXPÊRIENCIA </a>
-                        <a href="#speakers-session">PRELETORES</a>
-                        <a href="#shouldParticipate-session">QUEM DEVE PARTICIPAR</a>
+                        <a href="#leadership-section">LIDERANÇA</a>
+                        <a href="#experience-section">EXPÊRIENCIA </a>
+                        <a href="#speakers-section">PRELETORES</a>
+                        <a href="#shouldParticipate-section">QUEM DEVE PARTICIPAR</a>
+                        <a href="#contact-section">CONTATOS</a>
                         <div class="social-medias-small">
                             <a target="_blanck" href="https://www.facebook.com/envisionar.summit">
                                 <i class="fa fa-facebook"></i>
@@ -83,7 +87,7 @@
             <button class="btn-cta">CLIQUE AQUI PARA PARTICIPAR!  </button>
         </div>
     </header>
-    <div class="section" id="leadership-session">
+    <div class="section" id="leadership-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-12">
@@ -116,7 +120,7 @@
             </div>
         </div>
     </div>
-    <div class="section" id="experience-session">
+    <div class="section" id="experience-section">
         <section class="wrapper-slider">
             <div class="container">
                 <h2>CONFIRA UM POUCO DA EXPÊRIENCIA QUE VOCÊ VAI TER:</h2>
@@ -181,7 +185,7 @@
         </section>
 
     </div>
-    <div class="section" id="speakers-session">
+    <div class="section" id="speakers-section">
         <div class="container">
             <h2>PRELETORES</h2>
             <p>Conheça os preletores e temas da temporada 2022</p>
@@ -300,7 +304,7 @@
             </div>
         </div>
     </div>
-    <div class="section" id="shouldParticipate-session">
+    <div class="section" id="shouldParticipate-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
@@ -336,38 +340,71 @@
             </div>
         </div>
     </div>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <div class="section" id="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h6>Telefone</h6>
+                    <span>  
+                        <i class="fa fa-phone"></i>
+                         +55 (47) 8875-5000
+                    </span>
+                </div>
+                <div class="col-12 col-md-3">
+                    <h6>Midias Sociais</h6>
+                    <div>
+                        <a target="_blanck" href="https://www.facebook.com/envisionar.summit">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a target="_blanck" href="https://www.youtube.com/lidersummit">
+                            <i class="fa fa-youtube-play"></i>
+                        </a>
+                        <a target="_blanck" href="https://www.instagram.com/envisionar.summit/">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5">
+                    <h6>Local do Evento</h6>
+                    <p>ACJ - Associação Cristã Joinvilense</p>
+                    <p>Endereço: R. dos Portugueses, 2240 - Zona Industrial Norte, Joinville - SC, 89237-780  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- External script -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/4.2.8/js/tooltipster.bundle.min.js"
         integrity="sha512-ZKNW/Nk1v5trnyKMNuZ6kjL5aCM0kUATbpnWJLPSHFk/5FxnvF9XmpmjGbag6BEgmXiz7rL6o6uJF6InthyTSg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <!-- Summit JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"
         integrity="sha512-UyX8JsMsNRW1cYl8BoxpcamonpwU2y7mSTsN0Z52plp7oKo1u92Xqfpv6lOlTyH3yiMXK+gU1jw0DVCsPTfKew=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Summit JavaScript -->
     <script src="./js/tooltipster.bundle.js"></script>
-    <script src="./js/slider.js"></script>
+    <script src="./js/index.js"></script>
     </script>
 </body>
-
 </html>

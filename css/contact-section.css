@@ -1,0 +1,53 @@
+#contact-section {
+    background-image: url('../assets/images/bg-7.jpg');
+    background-position: right top;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    height: 300px;
+    padding-bottom: 0px;
+}
+
+#contact-section h6{
+    color:#154B69;
+    font-size: 20px;
+}
+
+#contact-section span{
+    color: #063853;
+    font-size: 16px;
+}
+
+#contact-section span i{  
+    color:#063853;
+    margin-right: 4px;
+}
+
+#contact-section div a{  
+   text-decoration: none;
+}
+
+#contact-section div i{  
+    color:#063853;
+    margin-right: 8px;
+    font-size: 20px;
+
+}
+#contact-section div i:hover{  
+    color:#0c5780;
+    margin-right: 8px;
+}
+#contact-section p{  
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+#contact-section p + p{  
+    font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+    #contact-section {
+        padding-top: 30px;
+    }
+}
+

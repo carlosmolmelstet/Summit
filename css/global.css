@@ -5,8 +5,11 @@ body {
 
 .section {
     padding-top: 100px;
-    min-height: 100vh;
+    background-position: center center;
+
 }
+
+
 
 .btn-cta {
     border-radius: 20px;

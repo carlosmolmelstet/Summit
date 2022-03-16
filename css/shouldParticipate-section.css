@@ -1,4 +1,4 @@
-#shouldParticipate-session{
+#shouldParticipate-section{
     background:
     linear-gradient(
       rgba(0, 0, 0, 0.6), 
@@ -10,18 +10,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     max-width: 100vw;
+    min-height: 100vh;
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#shouldParticipate-session h3 {
+#shouldParticipate-section h3 {
     color: rgb(236, 236, 236);
     font-size: 30px;
 }
 
-#shouldParticipate-session ul {
+#shouldParticipate-section ul {
     color: rgb(236, 236, 236);
     margin-top: 24px;
     list-style: none; 
@@ -29,7 +30,7 @@
     font-size: 20px;
 }
 
-#shouldParticipate-session ul li::before {
+#shouldParticipate-section ul li::before {
     content: "\2022";  
     color: rgb(236, 236, 236);
     font-weight: bold; 
@@ -40,7 +41,7 @@
 }
 
 
-#shouldParticipate-session p {
+#shouldParticipate-section p {
     color: rgb(236, 236, 236);
     font-weight: 500; 
     padding: 0;
@@ -48,14 +49,14 @@
     text-align: center;
 }
 
-#shouldParticipate-session p span {
+#shouldParticipate-section p span {
     color: rgb(236, 236, 236);
     font-weight: 800; 
     font-size: 24px;
     text-transform: uppercase;
 }
 
-#shouldParticipate-session .col-12 {
+#shouldParticipate-section .col-12 {
     margin-top: 24px;
 
 }
