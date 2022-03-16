@@ -1,5 +1,13 @@
 #leadership-session {
-    background-image: url('../assets/images/bg-2.jpg');
+    background-image: url('../assets/images/bg-5.png');
+    background:
+    /* top, transparent black, faked with gradient */ 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+    /* bottom, image */
+    url('../assets/images/bg-5.png');
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
