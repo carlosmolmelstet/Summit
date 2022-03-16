@@ -42,7 +42,6 @@
 
 #shouldParticipate-session p {
     color: rgb(236, 236, 236);
-    margin-top: 24px;
     font-weight: 500; 
     padding: 0;
     font-size: 24px;
@@ -55,3 +54,9 @@
     font-size: 24px;
     text-transform: uppercase;
 }
+
+#shouldParticipate-session .col-12 {
+    margin-top: 24px;
+
+}
+
