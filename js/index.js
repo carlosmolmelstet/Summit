@@ -87,11 +87,14 @@ $(document).ready(function () {
         });
     }
 
-  
+    $( ".sidebar-nav a" ).click(function() {
+        $( ".sidebar-nav" ).removeClass("active")
+      });
+
       $(".wrapper-sidebar").hover(function(){
-        $(".sidebar-nav").css("width", "340px");
+        $(".sidebar-nav").addClass("active")
         }, function(){
-        $(".sidebar-nav").css("width", "0");
+        $(".sidebar-nav").removeClass("active")
       });
 
 });

@@ -100,6 +100,9 @@ header .wrapper-sidebar .sidebar-nav {
     flex-direction: column;
     justify-content: center;
 }
+header .wrapper-sidebar .sidebar-nav.active {
+    width: 350px;
+}
   
   
 header .wrapper-sidebar .sidebar-nav a {
