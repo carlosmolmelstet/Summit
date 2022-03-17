@@ -114,6 +114,13 @@ header .wrapper-sidebar .sidebar-nav a {
     transition: 0.3s;
     cursor: pointer;
 }
+header .wrapper-sidebar .sidebar-nav .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: white;
+    font-size: 24px;
+}
   
 header .wrapper-sidebar .sidebar-nav a:hover {
     color: #d1d1d1;

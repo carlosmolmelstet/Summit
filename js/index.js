@@ -91,9 +91,11 @@ $(document).ready(function () {
         $( ".sidebar-nav" ).removeClass("active")
       });
 
-      $(".wrapper-sidebar").hover(function(){
+      $(".wrapper-sidebar span").click(function(){
         $(".sidebar-nav").addClass("active")
-        }, function(){
+      });
+
+      $(".close").click(function(){
         $(".sidebar-nav").removeClass("active")
       });
 
