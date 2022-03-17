@@ -8,12 +8,30 @@ header {
 }
 
 header .navbar {
-    padding: 8px 28px;
+    padding: 4px 28px;
     position: fixed;
     max-width: 100%;
     width: 100%;
     z-index: 999999;
     top: 0;
+    transition: 0.2s;
+}
+
+header .navbar.scroll {
+    background-color: rgba(12, 12, 12, 0.822);
+}
+
+ .wpp-btn {
+    width: 50px;
+    z-index: 999999;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+ .wpp-btn:hover {
+    transform: scale(1.1);
 }
 
 header .navbar .navbar-toggler {
@@ -60,9 +78,7 @@ header .wrapper-sidebar {
     align-items: center;
 }
 
-header .wrapper-sidebar:hover .sidebar-nav  {
-    width: 340px; 
-}
+
 
 header .wrapper-sidebar span{
     font-size: 40px;

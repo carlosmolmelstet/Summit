@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     max-width: 100%;
     overflow-x: hidden;
@@ -8,8 +12,6 @@ body {
     background-position: center center;
 
 }
-
-
 
 .btn-cta {
     border-radius: 20px;
@@ -26,5 +28,3 @@ body {
     cursor: pointer;
 }
 
-* {
-    font-family: 'Roboto', sans-serif;}

@@ -87,8 +87,28 @@ $(document).ready(function () {
         });
     }
 
+    $( ".sidebar-nav a" ).click(function() {
+        $( ".sidebar-nav" ).css("width", "0")
+      });
+
+      $(".wrapper-sidebar").hover(function(){
+        $(".sidebar-nav").css("width", "340px");
+        }, function(){
+        $(".sidebar-nav").css("width", "0");
+      });
+
 });
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    var navbar = $("#navbar")
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    navbar.addClass("scroll")
+  } else {
+    navbar.removeClass("scroll")
+  }
+}
 
 
 
