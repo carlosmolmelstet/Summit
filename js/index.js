@@ -87,10 +87,7 @@ $(document).ready(function () {
         });
     }
 
-    $( ".sidebar-nav a" ).click(function() {
-        $( ".sidebar-nav" ).css("width", "0")
-      });
-
+  
       $(".wrapper-sidebar").hover(function(){
         $(".sidebar-nav").css("width", "340px");
         }, function(){
